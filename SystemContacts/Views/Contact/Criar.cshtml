@@ -20,7 +20,7 @@
     </div>
     <div class="form-group my-2">
         <label for="input-contact">Contato</label>
-        <input type="number" max="11" asp-for="Phone" class="form-control" id="input-contact" placeholder="Digite o celular do contato">
+        <input maxlength="11" type="number" asp-for="Phone" class="form-control" id="input-contact" placeholder="Digite o celular do contato">
         @Html.ValidationMessageFor(x => x.Phone)
     </div>
     <button type="submit" class="btn btn-primary btn-block">Adicionar</button>
